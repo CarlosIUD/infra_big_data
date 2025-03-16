@@ -8,13 +8,13 @@ from datetime import datetime
 # Configuración
 BASE_URL = "https://api.spacexdata.com/v4/launches"
 DB_PATH = "src/static/db/ingestion.db"
-EXCEL_PATH = "src/static/xlsx/ingestion.xlsx"
+CSV_PATH = "src/static/xlsx/ingestion.csv"  # Cambié el nombre de Excel a CSV
 AUDIT_PATH = "src/static/auditoria/ingestion.txt"
 
 def ensure_directories_exist():
     """Asegura que los directorios necesarios existan."""
     os.makedirs(os.path.dirname(DB_PATH), exist_ok=True)
-    os.makedirs(os.path.dirname(EXCEL_PATH), exist_ok=True)
+    os.makedirs(os.path.dirname(CSV_PATH), exist_ok=True)  # Modificado para CSV
     os.makedirs(os.path.dirname(AUDIT_PATH), exist_ok=True)
 
 def get_launch_data():
@@ -105,8 +105,8 @@ def insert_launch_data(launch_data):
         conn.close()
         return False
 
-def generate_excel_sample():
-    """Genera un archivo Excel con una muestra de los datos almacenados."""
+def generate_csv_sample():
+    """Genera un archivo CSV con una muestra de los datos almacenados."""
     conn = sqlite3.connect(DB_PATH)
     
     # Obtener todos los registros de la tabla launches
@@ -115,9 +115,9 @@ def generate_excel_sample():
     
     conn.close()
     
-    # Guardar como Excel
-    df.to_excel(EXCEL_PATH, index=False)
-    print(f"Archivo Excel generado en {EXCEL_PATH}")
+    # Guardar como CSV
+    df.to_csv(CSV_PATH, index=False)  # Cambié to_excel por to_csv
+    print(f"Archivo CSV generado en {CSV_PATH}")
 
 def generate_audit_file(api_data, db_data):
     """Genera un archivo de auditoría comparando datos de API vs. base de datos."""
@@ -174,8 +174,8 @@ def main():
     # Obtener datos de la BD para auditoría
     db_data = get_db_data()
     
-    # Generar archivo Excel
-    generate_excel_sample()
+    # Generar archivo CSV
+    generate_csv_sample()  # Llamé al nuevo método para CSV
     
     # Generar archivo de auditoría
     generate_audit_file(api_data, db_data)

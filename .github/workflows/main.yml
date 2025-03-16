@@ -1,37 +1,53 @@
-name: Actividad Ingesta de Datos
+name: Actividad Preprocesamiento y Limpieza de Datos
 
 on:
   push:
     branches: [ main ]
-
+    
 jobs:
   build:
-    runs-on: windows-latest
-    permissions:
-      contents: write
-
+    runs-on: ubuntu-latest
 
     steps:
+      # Paso 1: Checkout del repositorio
       - name: Checkout repo
         uses: actions/checkout@v4
 
+      # Paso 2: Configuración de Python
       - name: Setup Python
         uses: actions/setup-python@v5
         with:
-          python-version: '3.9.2'
-      - name: paso1 - crea entorno virtual
-        run: python -m venv venv
-      - name: paso2 - activar entorno virtual
-        run: ./venv/Scripts/activate
-      - name: paso3 - instalar dependencias
-        run: pip install -r requirements.txt
-      - name: paso4 - Ejecutar script
-        run: python src/ingestion.py 
+          python-version: '3.10.10'
 
-      - name: Commit and Push changes
+      # Paso 3: Crear entorno virtual
+      - name: Create virtual environment
+        run: python -m venv venv
+
+      # Paso 4: Activar entorno virtual (para sistemas UNIX, usa "source venv/bin/activate")
+      - name: Activate virtual environment
+        run: source venv/bin/activate
+
+      # Paso 5: Instalar dependencias desde requirements.txt
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      # Paso 6: Ejecutar script de limpieza
+      - name: Run cleaning script
+        run: python src/cleaning.py
+
+      # Paso 7: Subir cambios generados (si es necesario, por ejemplo, el archivo CSV y el archivo de auditoría)
+      - name: Commit and push changes
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          commit_message: generación informe prueba json
-          commit_user_name: Carlos Cardona [GitHub Actions]
-          commit_user_email: carlos.cardona@est.iudigital.edu.co
-          commit_author: Carlos Cardona <carlos.cardona@est.iudigital.edu.co>
+          commit_message: 'Generación de archivos CSV y auditoría'
+          commit_user_name: 'GitHub Actions'
+          commit_user_email: 'actions@github.com'
+
+      # Paso 8: Subir los artefactos generados
+      - name: Upload CSV file and Audit report
+        uses: actions/upload-artifact@v3
+        with:
+          name: cleaned-data
+          path: |
+            src/static/xlsx/cleaned_data.csv
+            src/static/auditoria/cleaning_report.txt
