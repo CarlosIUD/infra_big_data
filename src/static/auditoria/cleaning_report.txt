@@ -1,8 +1,12 @@
-Total de registros iniciales: 205
-Registros duplicados eliminados: 0
-Registros con valores nulos eliminados en 'success': 19
-Valores nulos imputados en 'details': 71
-Tipos de datos corregidos:
+🔹 Auditoría de Limpieza de Datos
+Fecha y hora: 2025-03-16 18:40:45.614898
+
+📌 Total de registros iniciales: 205
+📌 Registros eliminados por duplicados: 0
+📌 Registros eliminados por valores nulos en 'success': 19
+📌 Valores nulos imputados en 'details': 0
+
+📌 Tipos de datos después de la limpieza:
 id                            object
 flight_number                  int64
 name                          object
