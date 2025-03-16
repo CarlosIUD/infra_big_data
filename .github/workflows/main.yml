@@ -11,41 +11,49 @@ jobs:
       contents: write
 
     steps:
+      # Paso 1: Checkout del repositorio
       - name: Checkout repo
         uses: actions/checkout@v4
 
+      # Paso 2: Configuración de Python
       - name: Setup Python
         uses: actions/setup-python@v5
         with:
           python-version: '3.9.2'
 
-      - name: paso1 - crear entorno virtual
+      # Paso 3: Crear entorno virtual
+      - name: Crear entorno virtual
         run: python -m venv venv
 
-      - name: paso2 - activar entorno virtual
+      # Paso 4: Activar entorno virtual
+      - name: Activar entorno virtual
         run: .\venv\Scripts\activate
 
-      - name: paso3 - instalar dependencias
+      # Paso 5: Instalar dependencias desde requirements.txt
+      - name: Instalar dependencias
         run: |
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
-      - name: paso4 - Ejecutar script ingestion.py
+      # Paso 6: Ejecutar el script de ingesta de datos
+      - name: Ejecutar ingestion.py
         run: python src/ingestion.py
 
-      - name: paso5 - Ejecutar script cleaning.py
+      # Paso 7: Ejecutar el script de limpieza de datos
+      - name: Ejecutar cleaning.py
         run: python src/cleaning.py
 
-      - name: Commit and Push changes
+      # Paso 8: Commit y Push de los cambios generados
+      - name: Commit y Push cambios
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: 'Generación automática de archivos de ingestión y limpieza'
-          commit_user_name: 'Carlos Cardona [GitHub Actions]'
-          commit_user_email: 'carlos.cardona@est.iudigital.edu.co'
-          commit_author: 'Carlos Cardona <carlos.cardona@est.iudigital.edu.co>'
+          commit_user_name: 'GitHub Actions'
+          commit_user_email: 'actions@github.com'
 
-      - name: Upload cleaned data and audit report
-        uses: actions/upload-artifact@v3
+      # Paso 9: Subir los archivos generados (CSV y reporte de auditoría)
+      - name: Subir archivos limpios y reporte de auditoría
+        uses: actions/upload-artifact@v4
         with:
           name: cleaned-data
           path: |
