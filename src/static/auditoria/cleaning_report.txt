@@ -1,7 +1,12 @@
+Fecha y hora: 2025-03-16 23:29:19.631438
+
+1. RESUMEN DE LIMPIEZA
+----------------------
 Total de registros iniciales: 205
-Registros duplicados eliminados: 0
+Registros duplicados eliminados: 19
 Registros con valores nulos eliminados en 'success': 19
 Valores nulos imputados en 'details': 71
+
 Tipos de datos corregidos:
 id                            object
 flight_number                  int64
