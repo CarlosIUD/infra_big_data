@@ -1,5 +1,5 @@
 Auditoría de Limpieza de Datos
-Fecha y hora: 2025-03-16 23:57:39.524423
+Fecha y hora: 2025-03-30 02:35:06.467176
 
 Total de registros iniciales: 205
 Registros eliminados por duplicados: 0
