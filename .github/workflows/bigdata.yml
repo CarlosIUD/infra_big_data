@@ -55,11 +55,11 @@ jobs:
           commit_user_name: 'GitHub Actions'
           commit_user_email: 'actions@github.com'
 
-      # Step 10: Upload artifacts (cleaned + enriched data and reports)
+      # Step 10: Upload cleaned & enriched data and reports
       - name: Upload cleaned & enriched data and reports
         uses: actions/upload-artifact@v4
         with:
-          name: final-datasets
+          name: enriched-artifacts
           path: |
             src/static/xlsx/cleaned_data.csv
             src/static/auditoria/cleaning_report.txt
