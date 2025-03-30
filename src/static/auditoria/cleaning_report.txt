@@ -1,0 +1,24 @@
+Auditoría de Limpieza de Datos
+Fecha y hora: 2025-03-16 23:57:39.524423
+
+Total de registros iniciales: 205
+Registros eliminados por duplicados: 0
+Registros eliminados por valores nulos en 'success': 19
+Valores nulos imputados en 'details': 0
+
+Tipos de datos después de la limpieza:
+id                            object
+flight_number                  int64
+name                          object
+date_utc         datetime64[ns, UTC]
+date_local                    object
+success                      float64
+details                       object
+rocket_id                     object
+launchpad_id                  object
+payloads                      object
+ships                         object
+capsules                      object
+failures                      object
+timestamp             datetime64[ns]
+dtype: object
