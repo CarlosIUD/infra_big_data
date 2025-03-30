@@ -1,33 +1,37 @@
-# 🚀 Proyecto Integrador: Preprocesamiento y Limpieza de Datos en Plataforma de Big Data
+# 🚀 Proyecto Integrador: Preprocesamiento, Limpieza y Enriquecimiento de Datos en Plataforma de Big Data
 
 ## 📌 **Descripción del Proyecto**
-Este proyecto implementa un pipeline de **ingestión y limpieza de datos** desde la API de SpaceX hacia una base de datos en SQLite, seguido de un proceso de **preprocesamiento y limpieza de datos** para garantizar la calidad de la información.
-
-Los datos se extraen, transforman y validan utilizando Python, Pandas y SQLAlchemy, y se generan **archivos de auditoría** y **datos limpios** en formato CSV. Además, todo el proceso está **automatizado con GitHub Actions**.
+Este proyecto implementa un pipeline de **ingestión, limpieza y enriquecimiento de datos** con datos de startups unicornio. A partir de una fuente base en formato CSV y un dataset complementario en JSONL, se generan múltiples archivos complementarios (JSON, CSV, TXT) y se combinan en un **dataset enriquecido**. Todo el proceso es **automatizado con GitHub Actions**.
 
 ## 🏗 **Estructura del Proyecto**
 ```
 nombre_apellido
-├── setup.py            # Configuración del paquete
-├── README.md           # Documentación del proyecto (este archivo)
-├── requirements.txt    # Dependencias del proyecto
-├── .github/workflows   # Configuración de GitHub Actions
-│   ├── bigdata.yml     # Workflow automatizado
-└── src                 # Código fuente
-    ├── static          # Archivos generados
-    │   ├── auditoria   # Archivos de auditoría
-    │   │   └── cleaning_report.txt  # Reporte de auditoría de limpieza
-    │   ├── db          # Base de datos SQLite
-    │   │   └── ingestion.db  # Base de datos de lanzamientos
-    │   └── xlsx        # Archivos CSV generados
-    │       ├── ingestion.csv   # Datos sin limpiar
-    │       └── cleaned_data.csv  # Datos limpios
-    ├── ingestion.py    # Script de ingestión de datos desde la API
-    ├── cleaning.py     # Script de preprocesamiento y limpieza de datos
+├── setup.py
+├── README.md
+├── requirements.txt
+├── .github/workflows
+│   └── bigdata.yml         # Automatización del pipeline completo
+└── src
+    ├── static
+    │   ├── auditoria
+    │   │   └── cleaning_report.txt  # Reporte de limpieza
+    │   ├── db
+    │   │   └── ingestion.db         # Base de datos SQLite
+    │   └── xlsx
+    │       ├── ingestion.csv        # Datos crudos
+    │       └── cleaned_data.csv     # Datos limpios
+    ├── ingestion.py
+    ├── cleaning.py
+    └── enrichment.py               # Enriquecimiento de datos
+├── data
+│   ├── founders.json               # Datos JSON complementarios
+│   ├── headcount.csv              # Datos CSV complementarios
+│   ├── descriptions.txt           # Descripciones en TXT
+│   ├── enriched_data.csv          # Dataset enriquecido
+│   └── enrichment_report.txt      # Reporte de auditoría de enriquecimiento
 ```
 
 ## 🛠 **Requisitos Previos**
-Para ejecutar este proyecto localmente, necesitas:
 - **Python 3.9 o superior**
 - **Git**
 - **Pandas** (`pip install pandas`)
@@ -40,57 +44,57 @@ pip install -r requirements.txt
 ```
 
 ## 🔄 **Flujo del Proceso**
-1. **Ingesta de Datos (`ingestion.py`)**:
-   - Se conecta a la API de SpaceX.
-   - Extrae la información de lanzamientos.
-   - Almacena los datos en SQLite (`ingestion.db`).
-   - Genera un archivo CSV de los datos sin procesar (`ingestion.csv`).
+1. **Ingesta de Datos (`ingestion.py`)**
+   - Conecta a la API de SpaceX.
+   - Guarda datos en SQLite (`ingestion.db`).
+   - Exporta a `ingestion.csv`.
 
-2. **Preprocesamiento y Limpieza (`cleaning.py`)**:
-   - Carga los datos desde la base de datos.
-   - Realiza un análisis exploratorio (duplicados, valores nulos, tipos de datos).
-   - Aplica correcciones y transformaciones necesarias.
-   - Exporta los datos limpios a un archivo CSV (`cleaned_data.csv`).
-   - Genera un reporte de auditoría (`cleaning_report.txt`).
+2. **Limpieza de Datos (`cleaning.py`)**
+   - Lee datos desde SQLite.
+   - Corrige duplicados, tipos y valores nulos.
+   - Exporta `cleaned_data.csv` y `cleaning_report.txt`.
 
-3. **Automatización con GitHub Actions (`bigdata.yml`)**:
-   - Al hacer `push` a `main`, se ejecuta el pipeline automáticamente.
-   - Se ejecutan `ingestion.py` y `cleaning.py`.
-   - Se suben los archivos generados como artefactos.
+3. **Enriquecimiento de Datos (`enrichment.py`)**
+   - Carga el dataset base y filtra el top 100 por valoración.
+   - Genera archivos complementarios en JSON, CSV y TXT.
+   - Realiza joins por empresa y crea `enriched_data.csv`.
+   - Genera `enrichment_report.txt` con auditoría.
+
+4. **Automatización con GitHub Actions**
+   - Ejecuta automáticamente todo el pipeline al hacer `push`.
 
 ## 📊 **Evidencias Generadas**
-El proyecto genera los siguientes archivos como prueba de ejecución:
-- **`cleaned_data.csv`**: Contiene los datos limpios después del preprocesamiento.
-- **`cleaning_report.txt`**: Resumen del proceso de limpieza, detallando los cambios en los datos.
+- `cleaned_data.csv` — Datos limpios
+- `cleaning_report.txt` — Auditoría de limpieza
+- `enriched_data.csv` — Datos enriquecidos
+- `enrichment_report.txt` — Auditoría de enriquecimiento
 
-## 🚀 **Cómo Ejecutar el Proyecto Localmente**
-Clona el repositorio y navega a la carpeta del proyecto:
+## 🚀 **Ejecución Local del Proyecto**
 ```bash
 git clone https://github.com/usuario/repo.git
 cd repo
-```
 
-Ejecuta la ingesta de datos:
-```bash
 python src/ingestion.py
-```
-
-Ejecuta el proceso de limpieza:
-```bash
 python src/cleaning.py
+python src/enrichment.py
 ```
 
-Verifica los archivos generados en `src/static/xlsx` y `src/static/auditoria`.
+Archivos generados:
+- `src/static/xlsx/*.csv`
+- `src/static/auditoria/*.txt`
+- `data/*.json`, `data/*.csv`, `data/*.txt`
 
 ## 🤖 **Automatización con GitHub Actions**
-Este proyecto está completamente automatizado con GitHub Actions. Cada vez que se hace un `push` a `main`:
-1. Se configura el entorno Python.
-2. Se instalan dependencias.
-3. Se ejecuta el pipeline de ingesta y limpieza.
-4. Se suben los archivos generados a GitHub.
+Cada vez que haces `push` a `main`:
+- Se crea el entorno y se instalan dependencias
+- Se ejecutan `ingestion.py`, `cleaning.py`, `enrichment.py`
+- Se suben los archivos generados como artefactos
 
-El archivo de configuración se encuentra en `.github/workflows/bigdata.yml`.
+Configurado en: `.github/workflows/bigdata.yml`
 
 ## 📌 **Contacto**
-📧 **Carlos Andrés Cardona Quintero** - carlos.cardona@est.iudigital.edu.co
-📧 **Mateo Valencia Minota** - mateo.valencia@est.iudigital.edu.co
+
+| Nombre                         | Correo Electrónico                              |
+|-------------------------------|--------------------------------------------------|
+| Carlos Andrés Cardona Quintero | carlos.cardona@est.iudigital.edu.co             |
+| Mateo Valencia Minota         | mateo.valencia@est.iudigital.edu.co              |

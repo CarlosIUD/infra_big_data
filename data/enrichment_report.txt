@@ -1,0 +1,23 @@
+=== Enrichment Report ===
+Base records: 100
+Enriched records: 114
+
+Joined data sources:
+- founders.json (Founder, Founded Year)
+- headcount.csv (Headcount)
+- descriptions.txt (Company Description)
+
+Missing values after merge:
+Unnamed: 0           0
+Company              0
+Valuation ($B)       0
+Date Joined          0
+Country              0
+City                 1
+Industry             0
+Select Investors     0
+valuation_billion    0
+Founder              0
+Founded Year         0
+Headcount            0
+Description          0

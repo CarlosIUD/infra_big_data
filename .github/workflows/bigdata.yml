@@ -11,51 +11,57 @@ jobs:
       contents: write
 
     steps:
-      # Paso 1: Checkout del repositorio
+      # Step 1: Checkout the repository
       - name: Checkout repo
         uses: actions/checkout@v4
 
-      # Paso 2: Configuración de Python
+      # Step 2: Set up Python
       - name: Setup Python
         uses: actions/setup-python@v5
         with:
           python-version: '3.9.2'
 
-      # Paso 3: Crear entorno virtual
-      - name: Crear entorno virtual
+      # Step 3: Create virtual environment
+      - name: Create virtual environment
         run: python -m venv venv
 
-      # Paso 4: Activar entorno virtual
-      - name: Activar entorno virtual
+      # Step 4: Activate virtual environment
+      - name: Activate virtual environment
         run: .\venv\Scripts\activate
 
-      # Paso 5: Instalar dependencias desde requirements.txt
-      - name: Instalar dependencias
+      # Step 5: Install dependencies
+      - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
-      # Paso 6: Ejecutar el script de ingesta de datos
-      - name: Ejecutar ingestion.py
+      # Step 6: Run ingestion script
+      - name: Run ingestion.py
         run: python src/ingestion.py
 
-      # Paso 7: Ejecutar el script de limpieza de datos
-      - name: Ejecutar cleaning.py
+      # Step 7: Run cleaning script
+      - name: Run cleaning.py
         run: python src/cleaning.py
 
-      # Paso 8: Commit y Push de los cambios generados
-      - name: Commit y Push cambios
+      # Step 8: Run enrichment pipeline
+      - name: Run enrichment.py
+        run: python src/enrichment.py
+
+      # Step 9: Commit and push generated files (optional)
+      - name: Commit and push changes
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          commit_message: 'Generación automática de archivos de ingestión y limpieza'
+          commit_message: 'Auto-generated data files and reports'
           commit_user_name: 'GitHub Actions'
           commit_user_email: 'actions@github.com'
 
-      # Paso 9: Subir los archivos generados (CSV y reporte de auditoría)
-      - name: Subir archivos limpios y reporte de auditoría
+      # Step 10: Upload artifacts (cleaned + enriched data and reports)
+      - name: Upload cleaned & enriched data and reports
         uses: actions/upload-artifact@v4
         with:
-          name: cleaned-data
+          name: final-datasets
           path: |
             src/static/xlsx/cleaned_data.csv
             src/static/auditoria/cleaning_report.txt
+            data/enriched_data.csv
+            data/enrichment_report.txt

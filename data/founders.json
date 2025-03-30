@@ -1,0 +1,502 @@
+[
+  {
+    "Company": "Bytedance",
+    "Founder": "Founder of Bytedance",
+    "Founded Year": 2000
+  },
+  {
+    "Company": "SpaceX",
+    "Founder": "Founder of SpaceX",
+    "Founded Year": 2001
+  },
+  {
+    "Company": "SHEIN",
+    "Founder": "Founder of SHEIN",
+    "Founded Year": 2002
+  },
+  {
+    "Company": "Stripe",
+    "Founder": "Founder of Stripe",
+    "Founded Year": 2003
+  },
+  {
+    "Company": "Klarna",
+    "Founder": "Founder of Klarna",
+    "Founded Year": 2004
+  },
+  {
+    "Company": "Canva",
+    "Founder": "Founder of Canva",
+    "Founded Year": 2005
+  },
+  {
+    "Company": "Checkout.com",
+    "Founder": "Founder of Checkout.com",
+    "Founded Year": 2006
+  },
+  {
+    "Company": "Instacart",
+    "Founder": "Founder of Instacart",
+    "Founded Year": 2007
+  },
+  {
+    "Company": "Databricks",
+    "Founder": "Founder of Databricks",
+    "Founded Year": 2008
+  },
+  {
+    "Company": "Revolut",
+    "Founder": "Founder of Revolut",
+    "Founded Year": 2009
+  },
+  {
+    "Company": "FTX",
+    "Founder": "Founder of FTX",
+    "Founded Year": 2011
+  },
+  {
+    "Company": "Epic Games",
+    "Founder": "Founder of Epic Games",
+    "Founded Year": 2010
+  },
+  {
+    "Company": "Fanatics",
+    "Founder": "Founder of Fanatics",
+    "Founded Year": 2012
+  },
+  {
+    "Company": "Chime",
+    "Founder": "Founder of Chime",
+    "Founded Year": 2013
+  },
+  {
+    "Company": "BYJU's",
+    "Founder": "Founder of BYJU's",
+    "Founded Year": 2014
+  },
+  {
+    "Company": "Xiaohongshu",
+    "Founder": "Founder of Xiaohongshu",
+    "Founded Year": 2015
+  },
+  {
+    "Company": "J&T Express",
+    "Founder": "Founder of J&T Express",
+    "Founded Year": 2016
+  },
+  {
+    "Company": "Miro",
+    "Founder": "Founder of Miro",
+    "Founded Year": 2017
+  },
+  {
+    "Company": "Yuanfudao",
+    "Founder": "Founder of Yuanfudao",
+    "Founded Year": 2018
+  },
+  {
+    "Company": "Discord",
+    "Founder": "Founder of Discord",
+    "Founded Year": 2000
+  },
+  {
+    "Company": "goPuff",
+    "Founder": "Founder of goPuff",
+    "Founded Year": 2001
+  },
+  {
+    "Company": "Yuanqi Senlin",
+    "Founder": "Founder of Yuanqi Senlin",
+    "Founded Year": 2002
+  },
+  {
+    "Company": "Ripple",
+    "Founder": "Founder of Ripple",
+    "Founded Year": 2003
+  },
+  {
+    "Company": "DJI Innovations",
+    "Founder": "Founder of DJI Innovations",
+    "Founded Year": 2019
+  },
+  {
+    "Company": "Blockchain.com",
+    "Founder": "Founder of Blockchain.com",
+    "Founded Year": 2004
+  },
+  {
+    "Company": "Plaid",
+    "Founder": "Founder of Plaid",
+    "Founded Year": 2005
+  },
+  {
+    "Company": "OpenSea",
+    "Founder": "Founder of OpenSea",
+    "Founded Year": 2006
+  },
+  {
+    "Company": "Grammarly",
+    "Founder": "Founder of Grammarly",
+    "Founded Year": 2007
+  },
+  {
+    "Company": "Devoted Health",
+    "Founder": "Founder of Devoted Health",
+    "Founded Year": 2008
+  },
+  {
+    "Company": "Faire",
+    "Founder": "Founder of Faire",
+    "Founded Year": 2009
+  },
+  {
+    "Company": "Brex",
+    "Founder": "Founder of Brex",
+    "Founded Year": 2010
+  },
+  {
+    "Company": "GoodLeap",
+    "Founder": "Founder of GoodLeap",
+    "Founded Year": 2014
+  },
+  {
+    "Company": "Deel",
+    "Founder": "Founder of Deel",
+    "Founded Year": 2016
+  },
+  {
+    "Company": "Xingsheng Selected",
+    "Founder": "Founder of Xingsheng Selected",
+    "Founded Year": 2015
+  },
+  {
+    "Company": "Biosplice Therapeutics",
+    "Founder": "Founder of Biosplice Therapeutics",
+    "Founded Year": 2013
+  },
+  {
+    "Company": "Bitmain Technologies",
+    "Founder": "Founder of Bitmain Technologies",
+    "Founded Year": 2012
+  },
+  {
+    "Company": "JUUL Labs",
+    "Founder": "Founder of JUUL Labs",
+    "Founded Year": 2011
+  },
+  {
+    "Company": "Getir",
+    "Founder": "Founder of Getir",
+    "Founded Year": 2017
+  },
+  {
+    "Company": "Airtable",
+    "Founder": "Founder of Airtable",
+    "Founded Year": 2018
+  },
+  {
+    "Company": "ZongMu Technology",
+    "Founder": "Founder of ZongMu Technology",
+    "Founded Year": 2019
+  },
+  {
+    "Company": "Rippling",
+    "Founder": "Founder of Rippling",
+    "Founded Year": 2000
+  },
+  {
+    "Company": "Global Switch",
+    "Founder": "Founder of Global Switch",
+    "Founded Year": 2001
+  },
+  {
+    "Company": "Bolt",
+    "Founder": "Founder of Bolt",
+    "Founded Year": 2003
+  },
+  {
+    "Company": "Celonis",
+    "Founder": "Founder of Celonis",
+    "Founded Year": 2002
+  },
+  {
+    "Company": "Weilong",
+    "Founder": "Founder of Weilong",
+    "Founded Year": 2005
+  },
+  {
+    "Company": "Swiggy",
+    "Founder": "Founder of Swiggy",
+    "Founded Year": 2006
+  },
+  {
+    "Company": "Alchemy",
+    "Founder": "Founder of Alchemy",
+    "Founded Year": 2004
+  },
+  {
+    "Company": "Talkdesk",
+    "Founder": "Founder of Talkdesk",
+    "Founded Year": 2012
+  },
+  {
+    "Company": "KuCoin",
+    "Founder": "Founder of KuCoin",
+    "Founded Year": 2016
+  },
+  {
+    "Company": "Digital Currency Group",
+    "Founder": "Founder of Digital Currency Group",
+    "Founded Year": 2015
+  },
+  {
+    "Company": "Thrasio",
+    "Founder": "Founder of Thrasio",
+    "Founded Year": 2014
+  },
+  {
+    "Company": "Notion Labs",
+    "Founder": "Founder of Notion Labs",
+    "Founded Year": 2013
+  },
+  {
+    "Company": "Gusto",
+    "Founder": "Founder of Gusto",
+    "Founded Year": 2009
+  },
+  {
+    "Company": "reddit",
+    "Founder": "Founder of reddit",
+    "Founded Year": 2011
+  },
+  {
+    "Company": "Chehaoduo",
+    "Founder": "Founder of Chehaoduo",
+    "Founded Year": 2010
+  },
+  {
+    "Company": "Figma",
+    "Founder": "Founder of Figma",
+    "Founded Year": 2008
+  },
+  {
+    "Company": "Lalamove",
+    "Founder": "Founder of Lalamove",
+    "Founded Year": 2007
+  },
+  {
+    "Company": "OutSystems",
+    "Founder": "Founder of OutSystems",
+    "Founded Year": 2017
+  },
+  {
+    "Company": "ServiceTitan",
+    "Founder": "Founder of ServiceTitan",
+    "Founded Year": 2018
+  },
+  {
+    "Company": "HEYTEA",
+    "Founder": "Founder of HEYTEA",
+    "Founded Year": 2019
+  },
+  {
+    "Company": "N26",
+    "Founder": "Founder of N26",
+    "Founded Year": 2000
+  },
+  {
+    "Company": "Klaviyo",
+    "Founder": "Founder of Klaviyo",
+    "Founded Year": 2001
+  },
+  {
+    "Company": "Northvolt",
+    "Founder": "Founder of Northvolt",
+    "Founded Year": 2002
+  },
+  {
+    "Company": "OYO Rooms",
+    "Founder": "Founder of OYO Rooms",
+    "Founded Year": 2005
+  },
+  {
+    "Company": "Niantic",
+    "Founder": "Founder of Niantic",
+    "Founded Year": 2004
+  },
+  {
+    "Company": "Tanium",
+    "Founder": "Founder of Tanium",
+    "Founded Year": 2003
+  },
+  {
+    "Company": "Rapyd",
+    "Founder": "Founder of Rapyd",
+    "Founded Year": 2006
+  },
+  {
+    "Company": "Kavak",
+    "Founder": "Founder of Kavak",
+    "Founded Year": 2007
+  },
+  {
+    "Company": "Snyk",
+    "Founder": "Founder of Snyk",
+    "Founded Year": 2008
+  },
+  {
+    "Company": "Nuro",
+    "Founder": "Founder of Nuro",
+    "Founded Year": 2009
+  },
+  {
+    "Company": "Chainalysis",
+    "Founder": "Founder of Chainalysis",
+    "Founded Year": 2010
+  },
+  {
+    "Company": "Pony.ai",
+    "Founder": "Founder of Pony.ai",
+    "Founded Year": 2011
+  },
+  {
+    "Company": "Bolt",
+    "Founder": "Founder of Bolt",
+    "Founded Year": 2012
+  },
+  {
+    "Company": "Tipalti",
+    "Founder": "Founder of Tipalti",
+    "Founded Year": 2014
+  },
+  {
+    "Company": "Lacework",
+    "Founder": "Founder of Lacework",
+    "Founded Year": 2013
+  },
+  {
+    "Company": "Tempus",
+    "Founder": "Founder of Tempus",
+    "Founded Year": 2015
+  },
+  {
+    "Company": "Ramp",
+    "Founder": "Founder of Ramp",
+    "Founded Year": 2016
+  },
+  {
+    "Company": "Flexport",
+    "Founder": "Founder of Flexport",
+    "Founded Year": 2019
+  },
+  {
+    "Company": "StarkWare",
+    "Founder": "Founder of StarkWare",
+    "Founded Year": 2005
+  },
+  {
+    "Company": "Fireblocks",
+    "Founder": "Founder of Fireblocks",
+    "Founded Year": 2018
+  },
+  {
+    "Company": "Dream11",
+    "Founder": "Founder of Dream11",
+    "Founded Year": 2017
+  },
+  {
+    "Company": "Caris Life Sciences",
+    "Founder": "Founder of Caris Life Sciences",
+    "Founded Year": 2000
+  },
+  {
+    "Company": "Hopin",
+    "Founder": "Founder of Hopin",
+    "Founded Year": 2002
+  },
+  {
+    "Company": "Dapper Labs",
+    "Founder": "Founder of Dapper Labs",
+    "Founded Year": 2001
+  },
+  {
+    "Company": "Razorpay",
+    "Founder": "Founder of Razorpay",
+    "Founded Year": 2004
+  },
+  {
+    "Company": "Automattic",
+    "Founder": "Founder of Automattic",
+    "Founded Year": 2005
+  },
+  {
+    "Company": "Netskope",
+    "Founder": "Founder of Netskope",
+    "Founded Year": 2003
+  },
+  {
+    "Company": "Ola Cabs",
+    "Founder": "Founder of Ola Cabs",
+    "Founded Year": 2002
+  },
+  {
+    "Company": "Toss",
+    "Founder": "Founder of Toss",
+    "Founded Year": 2006
+  },
+  {
+    "Company": "Carta",
+    "Founder": "Founder of Carta",
+    "Founded Year": 2007
+  },
+  {
+    "Company": "Scale AI",
+    "Founder": "Founder of Scale AI",
+    "Founded Year": 2008
+  },
+  {
+    "Company": "Argo AI",
+    "Founder": "Founder of Argo AI",
+    "Founded Year": 2009
+  },
+  {
+    "Company": "TripActions",
+    "Founder": "Founder of TripActions",
+    "Founded Year": 2011
+  },
+  {
+    "Company": "Gong",
+    "Founder": "Founder of Gong",
+    "Founded Year": 2010
+  },
+  {
+    "Company": "Gemini",
+    "Founder": "Founder of Gemini",
+    "Founded Year": 2012
+  },
+  {
+    "Company": "We Doctor",
+    "Founder": "Founder of We Doctor",
+    "Founded Year": 2013
+  },
+  {
+    "Company": "Ro",
+    "Founder": "Founder of Ro",
+    "Founded Year": 2014
+  },
+  {
+    "Company": "ConsenSys",
+    "Founder": "Founder of ConsenSys",
+    "Founded Year": 2015
+  },
+  {
+    "Company": "Automation Anywhere",
+    "Founder": "Founder of Automation Anywhere",
+    "Founded Year": 2016
+  },
+  {
+    "Company": "1Password",
+    "Founder": "Founder of 1Password",
+    "Founded Year": 2017
+  }
+]

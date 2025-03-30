@@ -1,0 +1,100 @@
+Bytedance	Bytedance is a leading company in Artificial intelligence.
+SpaceX	SpaceX is a leading company in Other.
+SHEIN	SHEIN is a leading company in E-commerce & direct-to-consumer.
+Stripe	Stripe is a leading company in Fintech.
+Klarna	Klarna is a leading company in Fintech.
+Canva	Canva is a leading company in Internet software & services.
+Checkout.com	Checkout.com is a leading company in Fintech.
+Instacart	Instacart is a leading company in Supply chain, logistics, & delivery.
+Databricks	Databricks is a leading company in Data management & analytics.
+Revolut	Revolut is a leading company in Fintech.
+FTX	FTX is a leading company in Fintech.
+Epic Games	Epic Games is a leading company in Other.
+Fanatics	Fanatics is a leading company in E-commerce & direct-to-consumer.
+Chime	Chime is a leading company in Fintech.
+BYJU's	BYJU's is a leading company in Edtech.
+Xiaohongshu	Xiaohongshu is a leading company in E-commerce & direct-to-consumer.
+J&T Express	J&T Express is a leading company in Supply chain, logistics, & delivery.
+Miro	Miro is a leading company in Internet software & services.
+Yuanfudao	Yuanfudao is a leading company in Edtech.
+Discord	Discord is a leading company in Internet software & services.
+goPuff	goPuff is a leading company in E-commerce & direct-to-consumer.
+Yuanqi Senlin	Yuanqi Senlin is a leading company in Consumer & retail.
+Ripple	Ripple is a leading company in Fintech.
+DJI Innovations	DJI Innovations is a leading company in Hardware.
+Blockchain.com	Blockchain.com is a leading company in Fintech.
+Plaid	Plaid is a leading company in Fintech.
+OpenSea	OpenSea is a leading company in E-commerce & direct-to-consumer.
+Grammarly	Grammarly is a leading company in Internet software & services.
+Devoted Health	Devoted Health is a leading company in Health.
+Faire	Faire is a leading company in Artificial intelligence.
+Brex	Brex is a leading company in Fintech.
+GoodLeap	GoodLeap is a leading company in Internet software & services.
+Deel	Deel is a leading company in Fintech.
+Xingsheng Selected	Xingsheng Selected is a leading company in E-commerce & direct-to-consumer.
+Biosplice Therapeutics	Biosplice Therapeutics is a leading company in Health.
+Bitmain Technologies	Bitmain Technologies is a leading company in Hardware.
+JUUL Labs	JUUL Labs is a leading company in Consumer & retail.
+Getir	Getir is a leading company in E-commerce & direct-to-consumer.
+Airtable	Airtable is a leading company in Internet software & services.
+ZongMu Technology	ZongMu Technology is a leading company in Auto & transportation.
+Rippling	Rippling is a leading company in Internet software & services.
+Global Switch	Global Switch is a leading company in Hardware.
+Bolt	Bolt is a leading company in Fintech.
+Celonis	Celonis is a leading company in Data management & analytics.
+Weilong	Weilong is a leading company in Consumer & retail.
+Swiggy	Swiggy is a leading company in Supply chain, logistics, & delivery.
+Alchemy	Alchemy is a leading company in Fintech.
+Talkdesk	Talkdesk is a leading company in Internet software & services.
+KuCoin	KuCoin is a leading company in Fintech.
+Digital Currency Group	Digital Currency Group is a leading company in Fintech.
+Thrasio	Thrasio is a leading company in Other.
+Notion Labs	Notion Labs is a leading company in Internet software & services.
+Gusto	Gusto is a leading company in Fintech.
+reddit	reddit is a leading company in Internet software & services.
+Chehaoduo	Chehaoduo is a leading company in E-commerce & direct-to-consumer.
+Figma	Figma is a leading company in Internet software & services.
+Lalamove	Lalamove is a leading company in Supply chain, logistics, & delivery.
+OutSystems	OutSystems is a leading company in Internet software & services.
+ServiceTitan	ServiceTitan is a leading company in Internet software & services.
+HEYTEA	HEYTEA is a leading company in Other.
+N26	N26 is a leading company in Fintech.
+Klaviyo	Klaviyo is a leading company in Internet software & services.
+Northvolt	Northvolt is a leading company in Other.
+OYO Rooms	OYO Rooms is a leading company in Travel.
+Niantic	Niantic is a leading company in Mobile & telecommunications.
+Tanium	Tanium is a leading company in Cybersecurity.
+Rapyd	Rapyd is a leading company in Fintech.
+Kavak	Kavak is a leading company in E-commerce & direct-to-consumer.
+Snyk	Snyk is a leading company in Cybersecurity.
+Nuro	Nuro is a leading company in Auto & transportation.
+Chainalysis	Chainalysis is a leading company in Fintech.
+Pony.ai	Pony.ai is a leading company in Artificial intelligence.
+Bolt	Bolt is a leading company in Auto & transportation.
+Tipalti	Tipalti is a leading company in Fintech.
+Lacework	Lacework is a leading company in Cybersecurity.
+Tempus	Tempus is a leading company in Health.
+Ramp	Ramp is a leading company in Fintech.
+Flexport	Flexport is a leading company in Supply chain, logistics, & delivery.
+StarkWare	StarkWare is a leading company in Cybersecurity.
+Fireblocks	Fireblocks is a leading company in Fintech.
+Dream11	Dream11 is a leading company in Internet software & services.
+Caris Life Sciences	Caris Life Sciences is a leading company in Health.
+Hopin	Hopin is a leading company in Internet software & services.
+Dapper Labs	Dapper Labs is a leading company in Fintech.
+Razorpay	Razorpay is a leading company in Fintech.
+Automattic	Automattic is a leading company in Internet software & services.
+Netskope	Netskope is a leading company in Cybersecurity.
+Ola Cabs	Ola Cabs is a leading company in Auto & transportation.
+Toss	Toss is a leading company in Fintech.
+Carta	Carta is a leading company in Fintech.
+Scale AI	Scale AI is a leading company in Artificial intelligence.
+Argo AI	Argo AI is a leading company in Artificial intelligence.
+TripActions	TripActions is a leading company in Travel.
+Gong	Gong is a leading company in Artificial intelligence.
+Gemini	Gemini is a leading company in Fintech.
+We Doctor	We Doctor is a leading company in Health.
+Ro	Ro is a leading company in Health.
+ConsenSys	ConsenSys is a leading company in Fintech.
+Automation Anywhere	Automation Anywhere is a leading company in Artificial intelligence.
+1Password	1Password is a leading company in Cybersecurity.
