@@ -42,6 +42,7 @@ print(f"[OK] Selected top 100 companies by valuation.")
 # ----------------------------
 
 os.makedirs("data", exist_ok=True)
+os.makedirs("src/static/auditoria", exist_ok=True)
 
 # JSON: Founders and Founded Year
 founders_data = []
@@ -71,14 +72,10 @@ print("[OK] Created complementary data files (JSON, CSV, TXT).")
 # Step 5: Load Complementary Files
 # ----------------------------
 
-# JSON
 with open("data/founders.json", encoding="utf-8") as f:
     founders_df = pd.DataFrame(json.load(f))
 
-# CSV
 headcount_df = pd.read_csv("data/headcount.csv")
-
-# TXT
 descriptions_df = pd.read_csv("data/descriptions.txt", sep="\t", names=["Company", "Description"])
 
 print("[OK] Loaded complementary files.")
@@ -99,7 +96,7 @@ print(f"[OK] Final enriched dataset has shape: {df_enriched.shape}")
 
 df_enriched.to_csv("data/enriched_data.csv", index=False)
 
-with open("data/enrichment_report.txt", "w", encoding="utf-8") as f:
+with open("src/static/auditoria/enrichment_report.txt", "w", encoding="utf-8") as f:
     f.write("=== Enrichment Report ===\n")
     f.write(f"Base records: {len(df_top100)}\n")
     f.write(f"Enriched records: {len(df_enriched)}\n\n")
