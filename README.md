@@ -24,7 +24,7 @@ nombre_apellido
     ├── cleaning.py
     └── enrichment.py               # Enriquecimiento de datos
     ├── docs
-│   └── arquitectura_modelo.pdf  # Documento final que describe y explica la arquitectura.
+│       └── arquitectura_modelo.pdf  # Documento final que describe y explica la arquitectura.
 ├── data
 │   ├── founders.json               # Datos JSON complementarios
 │   ├── headcount.csv              # Datos CSV complementarios
